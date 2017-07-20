@@ -1,37 +1,54 @@
 ## Welcome to the TAQTIQA GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/taqtiqa/taqtiqa.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Rkt Stats
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+| Rkt Image | Size | Build Status | Metrics |
+|-------    |------|------   |---------     |
+|3.4.1-rkt.N    |      |         |              |
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Rkt Versions
+The `taqtiqa.com/rkt-rrr-base:3.3.1-rkt.2` Rkt image will always rebuild 
+with R 3.3.1 and R packages installed from the 2016-10-31 MRAN 
+snapshot, corresponding to the last day that version of R was the 
+most recent release on CRAN. MRAN snap shots exist from 2014-09-17.
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+|Rkt Image   | LTS / Branch | R version | M/*CRAN date  | Deb version     | Code     |
+|------      |--------      |---------  |--------------|-----------------|----------|
+|            |              | 3.4.1     |              | 3.4.1-2         | Angry    |
+|            | 17.04        | 3.3.2     | 2017-03-05   | 3.3.2-1         | Zesty    |
+|            | 16.10        | 3.3.1     | 2016-10-30   | 3.3.1-1build1   | Yakkety  |
+|3.2.3-rkt.N | 16.04.2 (LTS)| 3.2.3     | 2016-03-09   | 3.2.3-4         | Xenial   |
+|            | 15.10        | 3.2.2     | 2015-12-10   | 3.2.2-1         | Wiley    |
+|            | 15.04        | 3.1.2     | 2015-03-08   | 3.1.2-2         | Vivid    |
+|            | 14.10        | 3.1.1     | 2014-10-30   | 3.1.1-1         | Utopic   |
+|            | 14.04.4 (LTS)| 3.0.2     | *2014-03-05  | 3.0.2-1ubuntu1  | Trusty   |
+|            | 13.10        | 3.0.1     | *2013-09-24  | 3.0.1-3ubuntu1  | Saucy    |
+|            | 13.04        | 2.15.2    | *2013-02-28  | 2.15.2-1ubuntu1 | Raring   |
+|            | 12.10        | 2.15.1    | *2012-06-21  | 2.15.1-5ubuntu1 | Quantal  |
+|            | 12.04.5 (LTS)| 2.14.1    | *2012-02-28  | 2.14.1-1        | Precise  |
+|            | 11.10        | 2.13.1    | *2011-09-29  | 2.13.1-1        | Oneiric  |
+|            | 11.04        | 2.12.1    | *2011-02-24  | 2.12.1-1        | Natty    |
+|            | 10.10        | 2.11.1    | *2010-10-14  | 2.11.1-2        | Maverick |
+|            | 10.04.4 (LTS)| 2.10.1    | *2010-04-21  | 2.10.1-2        | Lucid    |
+|            | 9.10         | 2.9.2     | *2009-10-25  | 2.9.2-3ubuntu1  | Karmic   |
+|            | 9.04         | 2.8.1     | *2009-04-16  | 2.8.1-1         | Jaunty   |
+|            | 8.10         | 2.7.1     | *2008-08-24  | 2.7.1-2         | Intrepid |
+|            | 8.04.4  (LTS)| 2.6.2     | *2008-04-21  | 2.6.2-2         | Hardy    |
+|            | 7.10         | NA        | NA           | NA              | Gutsy    |
+|            | 7.04         | NA        | NA           | NA              | Feisty   |
+|            | 6.10         | NA        | NA           | NA              | Edgy     |
+|            | 6.06.2  (LTS)| NA        | NA           | NA              | Dapper   |
+|            | 5.10         | NA        | NA           | NA              | Breezy   |
+|            | 5.04         | NA        | NA           | NA              | Hoary    |
+|            | 4.10         | NA        | NA           | NA              | Warty    |
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/taqtiqa/taqtiqa.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Note the **last** release dates were obtained from the canaonical FTP server 
+dates for the next version - 1 day. The release dates were given by:
+````bash
+$ lynx -dump http://cran.r-project.org/src/base/R-{0..3}/ | grep gz | grep -v http
+````
+The Deb version data comes from https://launchpad.net/r-project/trunk
