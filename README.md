@@ -4,7 +4,7 @@
 
 | Rkt Image | Size | Build Status | Metrics |
 |-------    |------|------   |---------     |
-|3.4.1-rkt.N    |      |         |              |
+|3.4.1.N    |      |         |              |
 
 
 ## Rkt Versions
@@ -13,13 +13,12 @@ with R 3.3.1 and R packages installed from the 2016-10-31 MRAN
 snapshot, corresponding to the last day that version of R was the 
 most recent release on CRAN. MRAN snap shots exist from 2014-09-17.
 
-
 |Rkt Image   | LTS / Branch | R version | M/*CRAN date  | Deb version     | Code     |
 |------      |--------      |---------  |--------------|-----------------|----------|
 |            |              | 3.4.1     |              | 3.4.1-2         | Angry    |
 |            | 17.04        | 3.3.2     | 2017-03-05   | 3.3.2-1         | Zesty    |
 |            | 16.10        | 3.3.1     | 2016-10-30   | 3.3.1-1build1   | Yakkety  |
-|3.2.3-rkt.N | 16.04.2 (LTS)| 3.2.3     | 2016-03-09   | 3.2.3-4         | Xenial   |
+|3.2.3.N     | 16.04.2 (LTS)| 3.2.3     | 2016-03-09   | 3.2.3-4         | Xenial   |
 |            | 15.10        | 3.2.2     | 2015-12-10   | 3.2.2-1         | Wiley    |
 |            | 15.04        | 3.1.2     | 2015-03-08   | 3.1.2-2         | Vivid    |
 |            | 14.10        | 3.1.1     | 2014-10-30   | 3.1.1-1         | Utopic   |
