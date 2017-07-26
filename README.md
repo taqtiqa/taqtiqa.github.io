@@ -5,6 +5,7 @@
 |Rkt-Base        | [![Github All Rkt-Base Releases][1]]()    |
 |Rkt-RRR-Base    | [![Github All Rkt-RRR-Base Releases][2]]()|
 |Rkt-RRR-Tidy    | [![Github All Rkt-RRR-Tidy Releases][3]]()|
+
 [1]:https://img.shields.io/github/downloads/taqtiqa/rkt-base/total.svg
 [2]:https://img.shields.io/github/downloads/taqtiqa/rkt-rrr-base/total.svg
 [3]:https://img.shields.io/github/downloads/taqtiqa/rkt-rrr-tidy/total.svg
@@ -13,7 +14,8 @@
 
 | Code  | Build Status | Downloads |
 |-------|--------------|-----------|
-| Hardy | [![Travis Status][10a]]() | [![ACI Downloads][10b]]()             |
+| Hardy | [![Travis Status][10a]]() | [![ACI Downloads][10b]]() |
+
 [10a]:https://img.shields.io/travis/taqtiqa/rkt-base/0.0.0-0.svg
 [10b]:https://img.shields.io/github/downloads/taqtiqa/rkt-base/0.0.0-0/total.svg
 
