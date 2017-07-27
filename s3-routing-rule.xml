@@ -1,0 +1,41 @@
+<!--
+ https://coreos.com/rkt/docs/latest/signing-and-verification-guide.html#distributing-images-via-meta-discovery
+-->
+<RoutingRules>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>rkt-base?ac-discovery=1</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <HostName>www.taqtiqa.io</HostName>
+      <ReplaceKeyPrefixWith>rkt-base.html</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>rkt-rrr-base?ac-discovery=1</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <HostName>www.taqtiqa.io</HostName>
+      <ReplaceKeyPrefixWith>rkt-rrr-base.html</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>rkt-rrr-tidy?ac-discovery=1</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <HostName>www.taqtiqa.io</HostName>
+      <ReplaceKeyPrefixWith>rkt-rrr-tidy.html</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>rkt-rrr-finance?ac-discovery=1</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <HostName>www.taqtiqa.io</HostName>
+      <ReplaceKeyPrefixWith>rkt-rrr-finance.html</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
+</RoutingRules>
