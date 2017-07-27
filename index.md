@@ -1,3 +1,6 @@
+---
+layout: default
+---
 ## Welcome to the TAQTIQA GitHub Pages
 
 | Rkt Containers | Metrics                                   |
