@@ -38,4 +38,14 @@
       <ReplaceKeyPrefixWith>rkt-rrr-finance.html</ReplaceKeyPrefixWith>
     </Redirect>
   </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <HttpErrorCodeReturnedEquals>403</HttpErrorCodeReturnedEquals>
+    </Condition>
+    <Redirect>
+      <ReplaceKeyPrefixWith>/</ReplaceKeyPrefixWith>
+      <Protocol>https</Protocol>
+      <HostName>www.taqtiqa.io</HostName>
+    </Redirect>
+  </RoutingRule>
 </RoutingRules>
