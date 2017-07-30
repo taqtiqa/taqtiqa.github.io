@@ -7,6 +7,7 @@
       <KeyPrefixEquals>rkt-base?ac-discovery=1</KeyPrefixEquals>
     </Condition>
     <Redirect>
+      <Protocol>https</Protocol>
       <HostName>www.taqtiqa.io</HostName>
       <ReplaceKeyPrefixWith>rkt-base.html</ReplaceKeyPrefixWith>
     </Redirect>
@@ -16,6 +17,7 @@
       <KeyPrefixEquals>rkt-rrr-base?ac-discovery=1</KeyPrefixEquals>
     </Condition>
     <Redirect>
+      <Protocol>https</Protocol>
       <HostName>www.taqtiqa.io</HostName>
       <ReplaceKeyPrefixWith>rkt-rrr-base.html</ReplaceKeyPrefixWith>
     </Redirect>
@@ -25,6 +27,7 @@
       <KeyPrefixEquals>rkt-rrr-tidy?ac-discovery=1</KeyPrefixEquals>
     </Condition>
     <Redirect>
+      <Protocol>https</Protocol>
       <HostName>www.taqtiqa.io</HostName>
       <ReplaceKeyPrefixWith>rkt-rrr-tidy.html</ReplaceKeyPrefixWith>
     </Redirect>
@@ -34,6 +37,7 @@
       <KeyPrefixEquals>rkt-rrr-finance?ac-discovery=1</KeyPrefixEquals>
     </Condition>
     <Redirect>
+      <Protocol>https</Protocol>
       <HostName>www.taqtiqa.io</HostName>
       <ReplaceKeyPrefixWith>rkt-rrr-finance.html</ReplaceKeyPrefixWith>
     </Redirect>
