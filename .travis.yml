@@ -1,0 +1,35 @@
+language: generic
+dist: trusty
+sudo: true
+branches:
+  only:
+    - s3
+
+# Build order
+#    before_install
+#    install
+#    before_script
+#    script
+#    after_success / after_failure
+#    after_script
+#
+# After the the after_script has run.
+#    before_deploy
+#    deploy
+#    after_deploy
+
+notifications:
+  email:
+    recipients:
+      - coders@taqtiqa.com
+    on_success: [always]
+    on_failure: [always]
+
+deploy:
+  provider: s3
+  access_key_id: "${ACCESS_KEY}"
+  secret_access_key: "${ACCESS_SECRET}"
+  bucket: 'taqtiqa.io'
+  skip_cleanup: true
+  region: us-east-1
+  detect_encoding: true
