@@ -4,6 +4,16 @@
 <RoutingRules>
   <RoutingRule>
     <Condition>
+      <KeyPrefixEquals>base-notebook?ac-discovery=1</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <Protocol>https</Protocol>
+      <HostName>www.taqtiqa.io</HostName>
+      <ReplaceKeyPrefixWith>base-notebook.html</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
       <KeyPrefixEquals>rkt-base?ac-discovery=1</KeyPrefixEquals>
     </Condition>
     <Redirect>
