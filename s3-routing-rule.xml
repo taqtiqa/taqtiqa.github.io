@@ -51,6 +51,36 @@
   </RoutingRule>
   <RoutingRule>
     <Condition>
+      <KeyPrefixEquals>datascience-notebook?ac-discovery=1</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <Protocol>https</Protocol>
+      <HostName>taqtiqa.github.io</HostName>
+      <ReplaceKeyPrefixWith>datascience-notebook.html</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>pyspark-notebook?ac-discovery=1</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <Protocol>https</Protocol>
+      <HostName>taqtiqa.github.io</HostName>
+      <ReplaceKeyPrefixWith>pyspark-notebook.html</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>all-spark-notebook?ac-discovery=1</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <Protocol>https</Protocol>
+      <HostName>taqtiqa.github.io</HostName>
+      <ReplaceKeyPrefixWith>all-spark-notebook.html</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
       <KeyPrefixEquals>rkt-base?ac-discovery=1</KeyPrefixEquals>
     </Condition>
     <Redirect>
