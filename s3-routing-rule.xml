@@ -1,6 +1,3 @@
-<!--
- https://coreos.com/rkt/docs/latest/signing-and-verification-guide.html#distributing-images-via-meta-discovery
--->
 <RoutingRules>
   <RoutingRule>
     <Condition>
@@ -8,8 +5,48 @@
     </Condition>
     <Redirect>
       <Protocol>https</Protocol>
-      <HostName>www.taqtiqa.io</HostName>
+      <HostName>taqtiqa.github.io</HostName>
       <ReplaceKeyPrefixWith>base-notebook.html</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>minimal-notebook?ac-discovery=1</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <Protocol>https</Protocol>
+      <HostName>taqtiqa.github.io</HostName>
+      <ReplaceKeyPrefixWith>minimal-notebook.html</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>scipy-notebook?ac-discovery=1</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <Protocol>https</Protocol>
+      <HostName>taqtiqa.github.io</HostName>
+      <ReplaceKeyPrefixWith>scipy-notebook.html</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>r-notebook?ac-discovery=1</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <Protocol>https</Protocol>
+      <HostName>taqtiqa.github.io</HostName>
+      <ReplaceKeyPrefixWith>r-notebook.html</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>tensorflow-notebook?ac-discovery=1</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <Protocol>https</Protocol>
+      <HostName>taqtiqa.github.io</HostName>
+      <ReplaceKeyPrefixWith>tensorflow-notebook.html</ReplaceKeyPrefixWith>
     </Redirect>
   </RoutingRule>
   <RoutingRule>
@@ -18,7 +55,7 @@
     </Condition>
     <Redirect>
       <Protocol>https</Protocol>
-      <HostName>www.taqtiqa.io</HostName>
+      <HostName>taqtiqa.github.io</HostName>
       <ReplaceKeyPrefixWith>rkt-base.html</ReplaceKeyPrefixWith>
     </Redirect>
   </RoutingRule>
@@ -28,7 +65,7 @@
     </Condition>
     <Redirect>
       <Protocol>https</Protocol>
-      <HostName>www.taqtiqa.io</HostName>
+      <HostName>taqtiqa.github.io</HostName>
       <ReplaceKeyPrefixWith>rkt-rrr-base.html</ReplaceKeyPrefixWith>
     </Redirect>
   </RoutingRule>
@@ -38,7 +75,7 @@
     </Condition>
     <Redirect>
       <Protocol>https</Protocol>
-      <HostName>www.taqtiqa.io</HostName>
+      <HostName>taqtiqa.github.io</HostName>
       <ReplaceKeyPrefixWith>rkt-rrr-tidy.html</ReplaceKeyPrefixWith>
     </Redirect>
   </RoutingRule>
@@ -48,7 +85,7 @@
     </Condition>
     <Redirect>
       <Protocol>https</Protocol>
-      <HostName>www.taqtiqa.io</HostName>
+      <HostName>taqtiqa.github.io</HostName>
       <ReplaceKeyPrefixWith>rkt-rrr-finance.html</ReplaceKeyPrefixWith>
     </Redirect>
   </RoutingRule>
@@ -57,9 +94,9 @@
       <HttpErrorCodeReturnedEquals>403</HttpErrorCodeReturnedEquals>
     </Condition>
     <Redirect>
-      <ReplaceKeyPrefixWith>/</ReplaceKeyPrefixWith>
       <Protocol>https</Protocol>
       <HostName>www.taqtiqa.io</HostName>
+      <ReplaceKeyPrefixWith>/</ReplaceKeyPrefixWith>
     </Redirect>
   </RoutingRule>
 </RoutingRules>
